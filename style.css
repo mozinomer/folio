@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body,ol,ul,p,.row {
 	margin: 0px;
 	padding:0px;
 	list-style: none;
 	color: #fff;
+	font-family: 'Roboto', sans-serif;
 }
 body {
 	background: #000;
@@ -15,4 +18,282 @@ a:hover, a, *:focus {
 img {
 	max-width: 100%;
 	display: block;
+	object-fit: cover;
+}
+.flexed {
+    display: flex;
+}
+
+.headerTop .flexed {
+    justify-content: space-between;
+}
+
+.headerTop ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTop li:nth-child(even) {
+    margin: 0px 20px;
+}
+
+.headerTop {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    background: #0D1B0E;
+}
+
+.headerTop li:last-child {
+    margin-right: 0px;
+}
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.headerTop a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.sliderInnerBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+}
+
+.sliderInnerBanner img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    min-height: 100vh;
+}
+
+.contentContainerBanner {position: relative;max-width: 600px;margin: auto;text-align: center;}
+
+.headerInnerContainer {
+    position: relative;
+    min-height: 110px;
+    align-items: center;
+}
+
+.logoContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    bottom: 0;
+}
+
+.headerMain ul#menu-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainMenuContainer {
+    width: 100%;
+}
+
+.headerMain {
+    border-bottom: 1px solid #ffffff36;
+}
+
+.contentContainerBanner h6 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.contentContainerBanner h2 {
+	font-size: 54px;
+	font-weight: 700;
+	font-family: 'Jost', sans-serif;
+}
+
+.contentContainerBanner p {
+    font-size: 16px;
+    line-height: 36px;
+    opacity: 0.8;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.buttonsContainerBanners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 380px;
+    margin: auto;
+}
+
+.buttonsContainerBanners a {
+    width: 47%;
+    border: 1px solid #eeeeeead;
+    padding: 10px;
+    font-weight: 500;
+}
+.sldierBannerHome .slick-dots {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
+.slick-dots button {
+    display: none;
+}
+
+.sldierBannerHome .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sldierBannerHome .slick-dots li.slick-active::after {content: "";display: block;width: 27px;height: 27px;position: absolute;left: -7px;right: 0;top: 0;bottom: 0;margin: auto;background: none;border: 1px solid #fff;border-radius: 50%;}
+
+.sldierBannerHome .slick-dots li.slick-active {
+    /* background: none; */
+}
+.freeForm .row {
+    align-items: center;
+}
+
+.freeForm {
+    background: #181818;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.freeForm p {
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.7;
+    font-weight: 300;
+    margin: 30px 20px 30px;
+}
+
+.freeForm a {
+    border: 1px solid #ffffff75;
+    font-weight: 500;
+    padding: 10px 50px;
+    display: block;
+    max-width: max-content;
+    margin: auto;
+    /* color: #ffffff75; */
+}
+
+.freeForm h2 {
+    font-size: 36px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.sectionsR .row {
+    align-items: center;
+    text-align: center;
+}
+
+.sectionsR .row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.sectionsR .col-md-6 {
+    padding: 0px;
+}
+
+.contentInnerR {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contentInnerR h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contentInnerR p {
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.7;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.contentInnerR a {
+    border: 1px solid #ffff;
+    padding: 12px 50px;
+    display: block;
+    max-width: max-content;
+    margin: auto;
+}
+
+.processThe {
+    min-height: 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 100px 0px;
+    background-blend-mode: multiply;
+    background-color: #00000078;
+}
+
+.contentInnerthp {
+    max-width: 530px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.contentInnerthp h2 {
+    font-size: 36px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contentInnerthp p {
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.8;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.contentInnerthp a {
+    border: 1px solid #ffffff75;
+    font-weight: 500;
+    padding: 10px 50px;
+    display: block;
+    max-width: max-content;
+    margin-left: auto;
 }

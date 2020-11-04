@@ -2,5 +2,6 @@ $('.sldierBannerHome').slick({
 	slidesToShow: 1,
 	dots: true,
 	arrows: false,
-	infinite: false
+	infinite: false,
+	centerMode: false,
 })
