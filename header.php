@@ -23,3 +23,40 @@
 </head>
 <?php wp_head(); ?>
 <body <?php body_class(); ?>>
+<header>
+    <div class="headerTop">
+        <div class="container">
+            <div class="flexed">
+                <div class="socialIcons">
+                    <ul>
+                        <li><a href="<?php the_field('facebook', 'options'); ?>"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="<?php the_field('twitter', 'options'); ?>"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="<?php the_field('instagram', 'options'); ?>"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="<?php the_field('pinterest', 'options'); ?>"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="timingFonenUmber">
+                    <ul>
+                        <li><?php the_field('timingOffice', 'options'); ?></li>
+                        <li><a href="tel:<?php the_field('phoneNumber', 'options'); ?>">
+                            <i class="fa fa-phone"></i><?php the_field('phoneNumber', 'options'); ?></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headerMain">
+        <div class="container">
+            <div class="headerInnerContainer flexed alignCenter justifyB">
+                <div class="logoContainer">
+                    <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
+                    <a href="<?php echo site_url(); ?>"><img src="<?php echo $image[0]; ?>"></a>
+                </div>
+                <div class="mainMenuContainer">
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

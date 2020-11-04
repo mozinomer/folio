@@ -1,0 +1,11 @@
+body,ol,ul,p {
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	color: #000;
+}
+a:hover, a, *:focus {
+	outline: none !important;
+	text-decoration: none;
+	color: inherit;
+}

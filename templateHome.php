@@ -1,0 +1,1 @@
+<?php /* Temaplate Name: Home Page */ get_heder(); ?>
