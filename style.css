@@ -106,6 +106,8 @@ header {
 
 .mainMenuContainer {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerMain {
@@ -296,4 +298,132 @@ header {
     display: block;
     max-width: max-content;
     margin-left: auto;
+}
+.MenuContainersFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p {font-size: 14px;line-height: 22px;font-weight: 300;opacity: 0.7;}
+
+footer .container {
+    max-width: 1700px;
+}
+
+footer > .container {
+    padding: 100px 30px;
+}
+
+.menuContainerFooters a {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 13px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.menuContainerFooters h6 {
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer h6 {
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.logoFotor p {
+    margin-top: 30px;
+}
+
+.copyrights {
+    background: #0D1B0E;
+    padding: 20px;
+}
+
+.copyrights p {
+    color: #fff;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul.socialIconsFooter {
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 0px;
+    font-size: 23px;
+}
+
+ul.socialIconsFooter li:nth-child(even) {
+    margin: 0px 20px;
+}
+
+ul.socialIconsFooter a {
+    opacity: 0.5;
+}
+
+ul.socialIconsFooter a:hover {
+    opacity: 1;
+}
+
+.menuContainerFooters a:hover {
+    opacity: 1;
+}
+.mainMenuContainer ul {
+    display: flex;
+}
+
+.mainMenuContainer li:nth-child(even) {
+    margin: 0px 20px;
+}
+
+.mainMenuContainer li:nth-child(-n+4) {
+    display: none;
+}
+.sectionsR img {
+    width: 100%;
+}
+.sliderInnerBanner a {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+}
+.sliderInnerBanner a:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 29%;
+	top: 23%;
+	width: 150%;
+	z-index: 1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+	background: #0d1b0e;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+.sliderInnerBanner a:hover:after {
+	    height: 450%;
+}
+.sliderInnerBanner a:hover {
+    border: 1px solid #0d1b0e;
+}
+.sliderInnerBanner a span {
+	position: relative;
+	z-index: 2;
 }

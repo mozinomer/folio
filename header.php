@@ -54,7 +54,12 @@
                     <a href="<?php echo site_url(); ?>"><img src="<?php echo $image[0]; ?>"></a>
                 </div>
                 <div class="mainMenuContainer">
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    <div class="menuContainers">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    </div>
+                    <div class="menuContainers">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    </div>
                 </div>
             </div>
         </div>

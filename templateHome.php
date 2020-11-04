@@ -9,8 +9,10 @@
 					<h2><?php the_sub_field('headingbanner'); ?></h2>
 					<p><?php the_sub_field('contentbanner'); ?></p>
 					<div class="buttonsContainerBanners">
-						<a href="<?php the_sub_field('button_1_link'); ?>"><?php the_sub_field('button_1_text'); ?></a>
-						<a href="<?php the_sub_field('button_2_link'); ?>"><?php the_sub_field('button_2_textbanner'); ?></a>
+						<a class="hovera" href="<?php the_sub_field('button_1_link'); ?>">
+							<span><?php the_sub_field('button_1_text'); ?></span></a>
+						<a class="hovera" href="<?php the_sub_field('button_2_link'); ?>">
+							<span><?php the_sub_field('button_2_textbanner'); ?></span></a>
 					</div>	
 				</div>
 			</div>
