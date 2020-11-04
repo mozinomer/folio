@@ -394,12 +394,12 @@ ul.socialIconsFooter a:hover {
 .sectionsR img {
     width: 100%;
 }
-.sliderInnerBanner a {
+.hovera {
 	position: relative;
 	overflow: hidden;
 	margin: 0px;
 }
-.sliderInnerBanner a:after {
+.hovera:after {
 	content: "";
 	position: absolute;
 	height: 0%;
@@ -417,13 +417,67 @@ ul.socialIconsFooter a:hover {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-.sliderInnerBanner a:hover:after {
+.hovera:hover:after {
 	    height: 450%;
 }
-.sliderInnerBanner a:hover {
+.hovera:hover {
     border: 1px solid #0d1b0e;
 }
-.sliderInnerBanner a span {
+.hovera span {
 	position: relative;
 	z-index: 2;
+}
+
+
+
+.containerSliderInner h6,
+.containerSliderInner h2,
+.containerSliderInner p,
+.containerSliderInner a
+{
+    opacity: 0;
+}
+
+
+.containerSliderInner.slick-active h6,
+.containerSliderInner.slick-active h2,
+.containerSliderInner.slick-active p,
+.containerSliderInner.slick-active a
+{
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;    
+    animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
 }

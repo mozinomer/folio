@@ -26,7 +26,8 @@
 				<div class="contentfreeForm">
 					<h2><?php the_field('headingFree'); ?></h2>
 					<p><?php the_field('contentFree'); ?></p>
-					<a href="<?php the_field('button_linkFree'); ?>"><?php the_field('button_textFree'); ?></a>
+					<a class="hovera" href="<?php the_field('button_linkFree'); ?>">
+						<span><?php the_field('button_textFree'); ?></span></a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -45,7 +46,8 @@
 			<div class="contentInnerR">
 				<h2><?php the_sub_field('headingR'); ?></h2>
 				<p><?php the_sub_field('contentR'); ?></p>
-				<a href="<?php the_sub_field('button_linkR'); ?>"><?php the_sub_field('button_textR'); ?></a>
+				<a class="hovera" href="<?php the_sub_field('button_linkR'); ?>">
+					<span><?php the_sub_field('button_textR'); ?></span></a>
 			</div>
 		</div>
 	</div>
@@ -56,7 +58,8 @@
 		<div class="contentInnerthp">
 			<h2><?php the_field('headingTP'); ?></h2>
 			<p><?php the_field('contentTP'); ?></p>
-			<a href="<?php the_field('button_linkTP'); ?>"><?php the_field('button_textTP'); ?></a>
+			<a class="hovera" href="<?php the_field('button_linkTP'); ?>">
+				<span><?php the_field('button_textTP'); ?></span></a>
 		</div>
 	</div>
 </div>
