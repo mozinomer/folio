@@ -650,3 +650,89 @@ section.catPage .container {
 .sliderThumbanils {
     margin: 30px 0px;
 }
+.containerprocess {
+    text-align: center;
+}
+
+.containerprocess p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    /* opacity: 0.6; */
+    margin: 30px 0px 60px;
+}
+
+.containerimagethree {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageContainerthreeBox {
+    flex: 0 33.333333%;
+}
+
+.containerVideos {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.containerVideos h2 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff5c;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+img.playICons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 50px;
+}
+.contactUS {
+    text-align: center;
+}
+
+.contactUS .container p {
+    font-size: 16px;
+    line-height: 33px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.minContainer span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.minContainer input, .minContainer textarea {
+    width: 100%;
+    background: #0D1B0E;
+    border: 2px solid #0D1B0E;
+    height: 50px;
+    padding: 20px;
+}
+
+.minContainer textarea {
+    height: 200px;
+}
+
+.minContainer input::placeholder, .minContainer textarea::placeholder {
+    color: #7A7A7A;
+    font-weight: 300;
+}
+
+.minContainer {
+    max-width: 550px;
+    margin: auto;
+}
+
+.minContainer input[type="submit"] {
+    padding: 0px;
+    color: #fff;
+    background: #274335;
+    font-weight: 500;
+    margin: 30px 0px 0px;
+}

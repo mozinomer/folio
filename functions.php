@@ -114,3 +114,5 @@ function cw_post_type_product() {
 add_action('init', 'cw_post_type_product');
 /*Custom Post type end*/
 
+
+add_filter('wpcf7_autop_or_not', '__return_false');
