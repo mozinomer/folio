@@ -1,5 +1,5 @@
 <?php 
-
+add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-logo', array(
 	'height'      => 100,
 	'width'       => 400,
@@ -14,8 +14,8 @@ function register_my_menus() {
       'header-menu' => __( 'Header Menu' ),
       'footer-menu' => __( 'Footer Menu 1' ),
       'footer-menu1' => __( 'Footer Menu 2' )
-    )
-  );
+  )
+);
 }
 add_action( 'init', 'register_my_menus' );
 
@@ -38,16 +38,8 @@ function my_acf_op_init() {
 }
 
 
-//hook into the init action and call create_book_taxonomies when it fires
 add_action( 'init', 'create_product_category_hierarchical_taxonomy', 0 );
- 
-//create a custom taxonomy name it topics for your posts
- 
 function create_product_category_hierarchical_taxonomy() {
- 
-// Add new taxonomy, make it hierarchical like categories
-//first do the translations part for GUI
- 
   $labels = array(
     'name' => _x( 'product_category', 'taxonomy general name' ),
     'singular_name' => _x( 'product_category', 'taxonomy singular name' ),
@@ -60,10 +52,10 @@ function create_product_category_hierarchical_taxonomy() {
     'add_new_item' => __( 'Add New product_category' ),
     'new_item_name' => __( 'New product_category Name' ),
     'menu_name' => __( 'product_category' ),
-  );    
- 
+);    
+  
 // Now register the taxonomy
- 
+  
   register_taxonomy('product_category',array('post'), array(
     'hierarchical' => true,
     'labels' => $labels,
@@ -71,15 +63,15 @@ function create_product_category_hierarchical_taxonomy() {
     'show_admin_column' => true,
     'query_var' => true,
     'rewrite' => array( 'slug' => 'product_category' ),
-  ));
- 
+));
+  
 }
 
 
 
 /*Custom Post type start*/
 function cw_post_type_product() {
-$supports = array(
+    $supports = array(
   'title', // post title
   'editor', // post content
   'author', // post author
@@ -90,33 +82,33 @@ $supports = array(
   'revisions', // post revisions
   'post-formats', // post formats
 );
-$labels = array(
-  'name' => _x('product', 'plural'),
-  'singular_name' => _x('product', 'singular'),
-  'menu_name' => _x('product', 'admin menu'),
-  'name_admin_bar' => _x('product', 'admin bar'),
-  'add_new' => _x('Add New', 'add new'),
-  'add_new_item' => __('Add New product'),
-  'new_item' => __('New product'),
-  'edit_item' => __('Edit product'),
-  'view_item' => __('View product'),
-  'all_items' => __('All product'),
-  'search_items' => __('Search product'),
-  'not_found' => __('No product found.'),
-);
-$args = array(
-  'supports' => $supports,
-  'labels' => $labels,
-  'public' => true,
-  'query_var' => true,
-  'rewrite' => array('slug' => 'product'),
-  'has_archive' => true,
-  'taxonomies' => array('product_category'),
-  'hierarchical' => false,
-'menu_icon' => 'dashicons-admin-home',
-);
+    $labels = array(
+      'name' => _x('product', 'plural'),
+      'singular_name' => _x('product', 'singular'),
+      'menu_name' => _x('product', 'admin menu'),
+      'name_admin_bar' => _x('product', 'admin bar'),
+      'add_new' => _x('Add New', 'add new'),
+      'add_new_item' => __('Add New product'),
+      'new_item' => __('New product'),
+      'edit_item' => __('Edit product'),
+      'view_item' => __('View product'),
+      'all_items' => __('All product'),
+      'search_items' => __('Search product'),
+      'not_found' => __('No product found.'),
+  );
+    $args = array(
+      'supports' => $supports,
+      'labels' => $labels,
+      'public' => true,
+      'query_var' => true,
+      'rewrite' => array('slug' => 'product'),
+      'has_archive' => true,
+      'taxonomies' => array('product_category'),
+      'hierarchical' => false,
+      'menu_icon' => 'dashicons-admin-home',
+  );
 
-register_post_type('product', $args);
+    register_post_type('product', $args);
 }
 
 add_action('init', 'cw_post_type_product');
