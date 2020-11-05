@@ -116,3 +116,46 @@ add_action('init', 'cw_post_type_product');
 
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+// Our custom post type function
+function CustomWork() {
+ 
+    register_post_type( 'Custom Works',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Custom Works' ),
+                'singular_name' => __( 'Movie' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'custom_works'),
+            'show_in_rest' => true,
+            'supports' => array('thumbnail', 'title')
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'CustomWork' );
+// Our custom post type function
+function Gallery() {
+ 
+    register_post_type( 'gallery',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'gallery' ),
+                'singular_name' => __( 'Gallery' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'gallery'),
+            'show_in_rest' => true,
+            'supports' => array('thumbnail', 'title')
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'Gallery' );
