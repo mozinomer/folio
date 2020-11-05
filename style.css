@@ -503,3 +503,35 @@ div#row_TermId3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+section.catPage .container {
+    max-width: 1750px;
+    padding: 0px 40px;
+}
+
+.imagecontainerProductWrapper {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagecontainerProductWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagecontainerProductWrapper h6 {
+    text-align: center;
+    display: block;
+}
+
+.productaWrappers h6 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.productaWrappers:hover h6 {
+    opacity: 1;
+}

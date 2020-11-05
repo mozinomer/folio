@@ -15,16 +15,18 @@ get_header(); ?>
 		<h2><?php echo $queried_object->name; ?></h2>
 	</div>
 </div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-3 productaWrappers">
-	        <div class="imagecontainerProductWrapper">
-	            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-	        </div>
-	        <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
-	    </div>  
+<section class="catPage">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 productaWrappers">
+		        <div class="imagecontainerProductWrapper">
+		            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+		        </div>
+		        <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+		    </div>  
+		</div>
 	</div>
-</div>
+</section>
 <?php endwhile;
 ?>
 
