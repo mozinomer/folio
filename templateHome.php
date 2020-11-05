@@ -37,21 +37,24 @@
 	</div>
 </div>
 <div class="sectionsR">
-	<?php if( have_rows('repeated_section') ): while( have_rows('repeated_section') ) : the_row();?>
-	<div class="row">
-		<div class="col-md-6">
-			<img src="<?php the_sub_field('imageR'); ?>">
-		</div>
-		<div class="col-md-6">
-			<div class="contentInnerR">
-				<h2><?php the_sub_field('headingR'); ?></h2>
-				<p><?php the_sub_field('contentR'); ?></p>
-				<a class="hovera" href="<?php the_sub_field('button_linkR'); ?>">
-					<span><?php the_sub_field('button_textR'); ?></span></a>
+		<?php $termchildren = get_terms('product_category');?>
+            <?php foreach($termchildren as $category) { 
+            $term_link = get_term_link( $category );     
+        ?>
+        <div class="row" id="row_TermId<?php echo $category->term_id; ?>">	
+        	<div class="col-md-6">
+				<img src="<?php the_field('imageCat', 'product_category_'.$category->term_id); ?>">
+			</div>
+			<div class="col-md-6">
+				<div class="contentInnerR">
+					<h2><?php echo $category->name; ?></h2>
+					<p><?php echo $category->description ?></p>
+					<a class="hovera" href="<?php echo $term_link; ?>">
+					<span>Shop Now</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<?php endwhile; endif;?>
+		<?php }  ?>
 </div>
 <div class="processThe" style="background-image: url('<?php the_field('background_imageTP'); ?>');">
 	<div class="container">
