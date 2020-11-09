@@ -13,14 +13,14 @@
 				<div class="col-md-4">
 					<div class="imageContainerStates">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>">
-						<?php the_field('asd'); ?>
+						<span><?php the_field('stateG'); ?></span>
 					</div>
 					<div class="contentImagesCOntainerGallery">
 						<h4><?php the_title(); ?></h4>
 						<ul>
-							<li><i class="fa fa-map-marker"></i><span><?php the_field('addresss') ?></span></li>
-							<li><i class="fa fa-phone"></i><span><?php the_field('phones') ?></span></li>
-							<li><i class="fa fa-"></i><span><?php the_field('website') ?></span></li>
+							<li><i class="fa fa-map-marker"></i><span><?php the_field('locationG') ?></span></li>
+							<li><i class="fa fa-phone"></i><span><?php the_field('tel_numberG') ?></span></li>
+							<li><i class="fa fa-"></i><span><?php the_field('domain_urlG') ?></span></li>
 						</ul>
 					</div>
 				</div>
