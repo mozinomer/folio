@@ -877,7 +877,38 @@ img.playICons {
     letter-spacing: 1px;
     margin-bottom: 50px;
 }
+.formContainerNewsLetter input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    font-size: 0;
+    width: 50px;
+    background: url('./images/18.png');
+    border: none;
+    top: 0px;
+    /* bottom: 0; */
+    /* margin: auto; */
+    background-size: cover;
+    background-position: center;
+}
 
+.formContainerNewsLetter input[type="email"] {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    background: #0d1b0e;
+    border: 2px solid #0d1b0e;
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.formContainerNewsLetter {
+    margin: 30px 0px 0px 0px;
+}
+form {
+    position: relative;
+}
 
 
 

@@ -34,7 +34,7 @@
 				</h6>
 				<p><?php the_field('news_letter_content', 'options'); ?></p>
 				<div class="formContainerNewsLetter">
-					<?php echo do_shortcode('') ?>
+					<?php echo do_shortcode('[contact-form-7 id="156" title="News Letter form"]') ?>
 				</div>
 				<ul class="socialIconsFooter">
 	                <li><a href="<?php the_field('facebook', 'options'); ?>"><i class="fa fa-facebook"></i></a></li>
