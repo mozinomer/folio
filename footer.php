@@ -1,4 +1,8 @@
-
+<?php 
+if (is_post_type_archive('product_category')) { ?>
+	<img src="<?php echo get_template_directory_uri(); ?>/2.png">
+<?php }
+?>
 <footer>
 	<div class="container">
 		<div class="row">
