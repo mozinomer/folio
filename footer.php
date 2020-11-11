@@ -1,8 +1,23 @@
-<?php 
-if (is_post_type_archive('product_category')) { ?>
-	<img src="<?php echo get_template_directory_uri(); ?>/2.png">
-<?php }
-?>
+<div class="formContainercat">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="leftContainerformBEforecat">
+					<img src="<?php the_field('image_Categorud', 'options') ?>">
+					<p><?php the_field('Catetest', 'options') ?></p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="rigthsideFormCOntainercat">
+					<h2>Please contact us if you are interested in purchasing a piece</h2>
+					<?php echo do_shortcode('[contact-form-7 id="157" title="Form Catgory"]'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <footer>
 	<div class="container">
 		<div class="row">
