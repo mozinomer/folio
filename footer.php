@@ -1,4 +1,4 @@
-<?php if (is_post_type_archive('product_category')) { ?>
+<?php if (is_tax('product_category')) { ?>
 <div class="formContainercat">
 	<div class="container">
 		<div class="row">
