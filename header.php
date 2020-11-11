@@ -58,7 +58,7 @@
                         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                     </div>
                     <div class="menuContainers">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu1' ) ); ?>
                     </div>
                 </div>
             </div>

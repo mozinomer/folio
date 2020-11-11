@@ -12,6 +12,7 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Header Menu' ),
+      'header-menu1' => __( 'Header Menu 2' ),
       'footer-menu' => __( 'Footer Menu 1' ),
       'footer-menu1' => __( 'Footer Menu 2' )
   )

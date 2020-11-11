@@ -1,3 +1,4 @@
+<?php if (is_post_type_archive('product_category')) { ?>
 <div class="formContainercat">
 	<div class="container">
 		<div class="row">
@@ -19,6 +20,8 @@
 <div class="imageContaineraween">
 	<img src="<?php the_field('image_before_footer', 'options'); ?>">
 </div>
+<?php } ?>
+
 
 
 <footer>
@@ -40,13 +43,13 @@
 						<h6>
 							Quick Links
 						</h6>
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</div>
 					<div class="menuContainerFooters">
 						<h6>
-							Quick Links
+							Shop
 						</h6>
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu1' ) ); ?>
 					</div>
 				</div>
 			</div>
