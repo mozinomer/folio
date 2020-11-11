@@ -16,6 +16,9 @@
 		</div>
 	</div>
 </div>
+<div class="imageContaineraween">
+	<img src="<?php the_field('image_before_footer', 'options'); ?>">
+</div>
 
 
 <footer>
